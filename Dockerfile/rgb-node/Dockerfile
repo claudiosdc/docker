@@ -14,8 +14,8 @@ RUN apt-get update \
 
 WORKDIR "$SRC_DIR"
 
-RUN git clone -n https://github.com/LNP-BP/rgb-node.git . \
-    && git checkout ${VERSION:+tags/v}${VERSION:-master}
+RUN git clone -n https://github.com/claudiosdc/rgb-node.git . \
+    && git checkout v0.2_syn_mod_fix
 
 
 RUN cargo build --release
