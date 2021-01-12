@@ -73,7 +73,7 @@ services:
 
   rgbd-signet:
     container_name: rgbd-signet
-    image: lnpbp/rgbd:latest
+    image: claudiosdc/rgb-node:v0.2.1_fix
     restart: unless-stopped
     depends_on:
       - bitcoind-signet
