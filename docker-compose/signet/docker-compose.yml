@@ -2,7 +2,7 @@ version: '3.2'
 services:
   bitcoind-signet:
     container_name: bitcoind-signet
-    image: lnpbp/bitcoind:nightly
+    image: claudiosdc/bitcoind:nightly
     restart: unless-stopped
     command:
       - "-signet"
